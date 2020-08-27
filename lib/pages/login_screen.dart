@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   FocusNode _emailNode = FocusNode();
-  FocusNode _passwordlNode = FocusNode();
+  FocusNode _passwordNode = FocusNode();
 
   void showHide() {
     setState(() {
@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   : null;
                             },
                             controller: _passwordController,
-                            focusNode: _passwordlNode,
+                            focusNode: _passwordNode,
                             obscureText: _secureText,
                             decoration: InputDecoration(
                                 labelText: 'Password',
